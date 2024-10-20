@@ -73,7 +73,7 @@ def OnTheWay():
 
     print(f"\nWhat should you do?:\n  Convince your wife to go home(Press '1')\n  Ask how she\'s doing(Press '2')")
     
-    #wait for 1 or 2
+    
     while True:
         if keyboard.is_pressed('1'):
             OnTheWay1()
@@ -413,6 +413,7 @@ def investigate2():
 
 investigate()
 
+#wake up in room
 print("After what seems like hours, you wake up.")
 keyboard.wait('enter')
 
@@ -456,6 +457,7 @@ invest_rightlefthall = False
 invest_rightrighthall = False
 aftermirror = False
 
+#end credit
 def end():
     os.system('cls')
     print("--__--__(Doctor's Creation)__--__--")
@@ -463,14 +465,15 @@ def end():
     print("Thank you for playing")
     keyboard.wait('enter')
     exit()
-
+    
+#ending 1
 def end1():
     os.system('cls')
     print("Did I just kill my wife?")
     keyboard.wait('enter')
     end()
 
-
+#ending 2
 def death():
     os.system('cls')
     print("This is your wife...You can\'t kill her...")
@@ -486,7 +489,7 @@ def death():
     keyboard.wait('enter')
     end()
 
-
+#if you die try again
 def tryagain():
     os.system('cls')
 
@@ -566,7 +569,7 @@ def battle():
         print(f"\n{sarah.name} swung at {rick.name} for {str(sarah.attack - (rick.defense + temporary_defense))} damage.")
         keyboard.wait('enter')
         
-
+    #if either of them die then do this
     if (sarah.hp <= 0):
         print(f"\n{rick.name} swings one final strong blow, knocking {sarah.name} down, finishing her off.")
         keyboard.wait('enter')
@@ -632,7 +635,7 @@ def mutation():
 
     
     
-
+#after going through the wall
 def throughmirror():
     os.system('cls')
     print("You walk through this wall into this dark room. The only thing you can see is a few feet in front of you due to your flashlight.")
@@ -1047,7 +1050,7 @@ def office():
 
         
 
-
+#start the rest of the code
 
 office()
 
